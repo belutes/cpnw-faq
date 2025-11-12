@@ -64,3 +64,45 @@ main .container {
   transform: translateY(-4px);
   box-shadow: 0 1rem 2rem rgba(16, 24, 40, 0.1);
 }
+
+.requirements-grid {
+  column-count: 1;
+  column-gap: 1.5rem;
+}
+
+@media (min-width: 992px) {
+  .requirements-grid {
+    column-count: 2;
+  }
+}
+
+.requirement-card {
+  padding: 1.5rem;
+  border: none;
+  background: rgba(255, 255, 255, 0.95);
+  text-align: left;
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
+  border-radius: 0.85rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(15, 23, 42, 0.08);
+}
+
+.requirement-card h2 {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.requirement-card figure {
+  margin: 0 0 0.75rem 0;
+}
+
+.requirement-card figure img {
+  border-radius: 0.75rem;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.requirement-card > * + * {
+  margin-top: 0.75rem;
+}
