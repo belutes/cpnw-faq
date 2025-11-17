@@ -10,7 +10,6 @@
     { text: "Patients don't care about your policies. They care about how you treat them.", author: "Barbara Balik, healthcare consultant and author" },
     { text: "Nurses are the hospitality of the hospital.", author: "Carrie Latet" },
     { text: "You treat a disease: you win, you lose. You treat a person, I guarantee you win...no matter the outcome.", author: "Robin Williams, Patch Adams" },
-    { text: "Just so you know, doctors are here to diagnose, not heal. We heal.", author: "Edie Falco in Nurse Jackie" },
     { text: "Bound by paperwork, short on hands, sleep, and energy...nurses are rarely short on caring.", author: "Sharon Hudacek" },
     { text: "Most of all, you need moral courage because nursing is about the pursuit of justice. It requires you to stand up to bullies, to do things that are right but difficult, and to speak your mind even when you are afraid. I wasn't strong like this when I started out. Nursing made me strong.", author: "Tilda Shalof" },
     { text: "In healthcare, the experience of the patient is the new marketing.", author: "David Feinberg, former CEO of Geisinger Health" },
