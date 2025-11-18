@@ -47,6 +47,12 @@ document.addEventListener("DOMContentLoaded", () => {
       tags: ["requirements", "forms", "site orientations", "insurance"],
     },
     {
+      title: "Document Verification Specialists (DVS)",
+      description: "Confirm whether your program purchased DVS services and learn how specialists handle requirement reviews and escalations.",
+      url: "education-articles/document-verification-specialist.html",
+      tags: ["dvs", "document verification", "services", "packages"],
+    },
+    {
       title: "Create an Insurance Requirement",
       description: "Step-by-step instructions for building liability insurance requirements that align with affiliation agreements.",
       url: "education-articles/create-insurance-requirement.html",
@@ -63,6 +69,12 @@ document.addEventListener("DOMContentLoaded", () => {
       description: "Use the Review table to inspect uploads, mark Verification Complete, and signal healthcare partners via the Verified column.",
       url: "education-articles/review-submissions.html",
       tags: ["review", "verification complete", "verified", "needs review"],
+    },
+    {
+      title: "Accepted Documentation Formats",
+      description: "Checklist of required data points and file types so uploads meet coordinator or DVS standards the first time.",
+      url: "education-articles/accepted-document-formats.html",
+      tags: ["documents", "file types", "uploads", "standards"],
     },
   ];
 
