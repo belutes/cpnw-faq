@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Healthcare Coordinator Dashboard | CPNW</title>
+    <title>Manage Healthcare Users | CPNW</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -53,13 +53,14 @@
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
-                  >FAQs</a
                 >
+                  FAQs
+                </a>
                 <ul class="dropdown-menu dropdown-menu-end">
                   <li>
                     <a
                       class="dropdown-item"
-                      href="../../education-views/education-faq.html"
+                      href="../education-views/education-faq.html"
                       >Education Coordinator FAQ</a
                     >
                   </li>
@@ -87,74 +88,112 @@
 
     <main class="py-5 mt-5">
       <div class="container">
-        <div class="text-center mb-4">
+        <div class="mb-4 text-center">
           <p class="text-uppercase text-primary fw-semibold mb-2">
             Healthcare Coordinator Guide
           </p>
-          <h1 class="hero-title mb-3">Healthcare Dashboard Overview</h1>
+          <h1 class="hero-title mb-3">Manage Healthcare Users</h1>
           <p class="lead text-muted hero-subtitle mx-auto">
-            See where to manage site notifications, launch quick links, and
-            navigate the three Admin tools specific to healthcare partners.
+            Use the Admin &gt; Users menu to manage healthcare contacts—review
+            active accounts, and process new coordinator account requests.
           </p>
         </div>
 
         <div class="text-center mb-4">
           <img
-            src="../../../images/healthcare-article-images/healthcare-dashboard.png"
-            alt="Healthcare dashboard screenshot"
+            src="../../../images/healthcare-article-images/hc-users-menu.png"
+            alt="Healthcare users menu"
             class="img-fluid rounded shadow"
           />
         </div>
 
         <section class="card shadow-lg border-0 mb-3">
           <div class="card-body">
-            <h2 class="h4">Notifications (right side)</h2>
-            <p class="text-muted mb-0">
-              Every time you land on the Dashboard, the right column keeps you
-              current. This section lists new student messages, reminders about
-              pending approvals, and other announcements. Click a notification
-              to open the notification modal.
-            </p>
+            <h2 class="h4">Navigate the Users page</h2>
+            <ol class="text-muted ps-3 mb-0">
+              <li>
+                From the Dashboard, open the <strong>Admin</strong> menu and
+                select <strong>Users</strong>. The page loads with tabs for
+                Active Users, Account Requests, and Inactive Users.
+              </li>
+              <li>
+                Use the search box to filter by name, facility, or email. Paging
+                controls at the bottom let you browse every contact tied to your
+                site.
+              </li>
+              <li>
+                Each row includes quick actions—view details, or
+                archive/deactivate when a coordinator leaves your system.
+              </li>
+            </ol>
           </div>
         </section>
 
         <section class="card shadow-lg border-0 mb-3">
           <div class="card-body">
-            <h2 class="h4">Requirements quick link</h2>
-            <p class="text-muted mb-0">
-              Healthcare partners can create and maintain their own requirements
-              through this link. Most sites stick to the
-              <strong>Forms</strong> or
-              <strong>Site Orientations</strong> categories—perfect for sharing
-              site-specific paperwork or orientation steps. Review existing
-              items, update instructions, and publish so education partners and
-              students know exactly what your facility expects.
+            <h2 class="h4">Active Users tab</h2>
+            <p class="text-muted">
+              The Active Users tab lists healthcare coordinators only (students
+              or education staff do not appear here).
             </p>
+            <ul class="text-muted ps-3 mb-0">
+              <li>
+                Use this view to confirm who currently has login access to your
+                facility’s CPNW account.
+              </li>
+              <li>
+                If someone no longer needs access, choose the archive option for
+                permanent removal, deactivate for temporary removal. when
+                deactivated, they move to the Inactive Users tab, keeping your
+                active users list clean.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="card shadow-lg border-0 mb-3">
+          <div class="card-body">
+            <h2 class="h4">Account Requests tab</h2>
+            <p class="text-muted">
+              Whenever a healthcare staff member completes the registration
+              form, their request arrives in this tab.
+            </p>
+            <ol class="text-muted ps-3 mb-0">
+              <li>
+                Click the request to review the submitted contact info, role,
+                and associated facility.
+              </li>
+              <li>
+                Approve to activate their account immediately or decline with a
+                note explaining what’s missing.
+              </li>
+              <li>
+                Approved requests move to the Active Users tab; declined
+                requests disappear but the registrant receives your message.
+              </li>
+            </ol>
           </div>
         </section>
 
         <section class="card shadow-lg border-0 mb-4">
           <div class="card-body">
-            <h2 class="h4">Admin menu for healthcare partners</h2>
+            <h2 class="h4">Inactive Users tab</h2>
             <p class="text-muted">
-              Healthcare coordinators have three Admin links:
+              Healthcare coordinators rarely revisit this tab, but it stores
+              anyone you deactivated for record-keeping.
             </p>
             <ul class="text-muted ps-3 mb-0">
               <li>
-                <strong>Review</strong>: Open the Review Submissions table to
-                check both CPNW and site-specific requirements created by your
-                healthcare facility.
+                Search or filter if a former coordinator returns so you can
+                restore their access.
               </li>
               <li>
-                <strong>Reports</strong>: Review and export reports summarizing
-                compliance items, background checks, and data from other
-                requirements for students/faculty assigned to your facility.
-                This is also where you can access the students documents folder.
+                Keep this tab clean by archiving accounts when staff change
+                roles or leave the facility.
               </li>
               <li>
-                <strong>Users</strong>: See active healthcare users for your
-                facility, archive or reactivate accounts, and approve or decline
-                access requests for your organization.
+                Some organizations review this list annually to confirm who
+                still needs access.
               </li>
             </ul>
           </div>
@@ -192,6 +231,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
     <script src="../../../js/site-footer.js"></script>
   </body>
 </html>

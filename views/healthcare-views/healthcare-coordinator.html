@@ -65,7 +65,7 @@
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#"
+                    <a class="dropdown-item" href="healthcare-faq.html"
                       >Healthcare Coordinator FAQ</a
                     >
                   </li>
@@ -99,8 +99,63 @@
           </p>
         </div>
 
+        <section class="faq-search mb-5">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+              <label
+                for="healthcareGuideSearchInput"
+                class="form-label text-uppercase small fw-semibold text-muted"
+                >Search Healthcare Guides</label
+              >
+              <div class="input-group faq-search-input">
+                <span class="input-group-text" aria-hidden="true">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m21 21-4.35-4.35M4 11a7 7 0 1 0 14 0 7 7 0 0 0-14 0Z"
+                    />
+                  </svg>
+                </span>
+                <input
+                  id="healthcareGuideSearchInput"
+                  type="search"
+                  class="form-control"
+                  placeholder='Try "passport", "reports", or "requirements"'
+                  aria-describedby="healthcareGuideSearchHelp"
+                  autocomplete="off"
+                />
+              </div>
+              <p
+                id="healthcareGuideSearchHelp"
+                class="text-muted small mt-2 mb-0"
+              >
+                Start typing to highlight matching cards and jump directly to a
+                tutorial.
+              </p>
+            </div>
+          </div>
+          <div
+            id="healthcareGuideSearchResults"
+            class="faq-search-results mt-4 faq-match-hidden"
+            aria-live="polite"
+          ></div>
+        </section>
+
         <div class="row g-4">
-          <div class="col-12 col-md-6 col-lg-4">
+          <div
+            class="col-12 col-md-6 col-lg-4"
+            data-guide-id="hc-dashboard"
+            data-guide-tags="dashboard,admin,notifications"
+          >
             <a
               class="card hover-lift-card h-100 shadow-sm border-0 text-decoration-none text-reset"
               href="healthcare-articles/healthcare-dashboard.html"
@@ -115,7 +170,11 @@
               </div>
             </a>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
+          <div
+            class="col-12 col-md-6 col-lg-4"
+            data-guide-id="hc-requirements"
+            data-guide-tags="requirements,forms,site orientation"
+          >
             <a
               class="card hover-lift-card h-100 shadow-sm border-0 text-decoration-none text-reset"
               href="healthcare-articles/site-specific-requirements.html"
@@ -123,14 +182,18 @@
               <div class="card-body">
                 <h2 class="h5 mb-2">Site-Specific Requirements</h2>
                 <p class="text-muted">
-                  Build site-specific requirements through the Requirements link
-                  so students can maintain compliance.
+                  Build site orientation notes or uploadable forms through the
+                  Requirements link so students see every facility-specific step.
                 </p>
                 <span class="stretched-link"></span>
               </div>
             </a>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
+          <div
+            class="col-12 col-md-6 col-lg-4"
+            data-guide-id="hc-review"
+            data-guide-tags="review,submissions,verification"
+          >
             <a
               class="card hover-lift-card h-100 shadow-sm border-0 text-decoration-none text-reset"
               href="healthcare-articles/review-student-submissions.html"
@@ -141,6 +204,62 @@
                   See when students appear in the Review table, inspect Clinical
                   Passport documents, and approve or reject your site-specific
                   requirements.
+                </p>
+                <span class="stretched-link"></span>
+              </div>
+            </a>
+          </div>
+          <div
+            class="col-12 col-md-6 col-lg-4"
+            data-guide-id="hc-reports"
+            data-guide-tags="reports,roster,assignments"
+          >
+            <a
+              class="card hover-lift-card h-100 shadow-sm border-0 text-decoration-none text-reset"
+              href="healthcare-articles/reports-and-rosters.html"
+            >
+              <div class="card-body">
+                <h2 class="h5 mb-2">Reports & Clinical Rosters</h2>
+                <p class="text-muted">
+                  Learn how the Passport and Clinical Roster tabs reveal
+                  assignment approvals, requirement icons, and rotation details.
+                </p>
+                <span class="stretched-link"></span>
+              </div>
+            </a>
+          </div>
+          <div
+            class="col-12 col-md-6 col-lg-4"
+            data-guide-id="hc-users"
+            data-guide-tags="users,accounts,access"
+          >
+            <a
+              class="card hover-lift-card h-100 shadow-sm border-0 text-decoration-none text-reset"
+              href="healthcare-articles/healthcare-users.html"
+            >
+              <div class="card-body">
+                <h2 class="h5 mb-2">Manage Users</h2>
+                <p class="text-muted">
+                  Review active healthcare contacts, process new account requests, and manage inactive users from the Admin menu.
+                </p>
+                <span class="stretched-link"></span>
+              </div>
+            </a>
+          </div>
+          <div
+            class="col-12 col-md-6 col-lg-4"
+            data-guide-id="hc-faq"
+            data-guide-tags="faq,questions,answers"
+          >
+            <a
+              class="card hover-lift-card h-100 shadow-sm border-0 text-decoration-none text-reset"
+              href="healthcare-faq.html"
+            >
+              <div class="card-body">
+                <h2 class="h5 mb-2">Healthcare FAQs</h2>
+                <p class="text-muted">
+                  Browse quick answers about Passport timing, roster views, user
+                  management, and site requirements.
                 </p>
                 <span class="stretched-link"></span>
               </div>
@@ -179,6 +298,7 @@
       crossorigin="anonymous"
     ></script>
 
+    <script src="../../js/healthcare-guide-search.js"></script>
     <script src="../../js/site-footer.js"></script>
   </body>
 </html>
